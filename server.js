@@ -32,7 +32,7 @@ app.post('/test', function(req, res) {
 //         .catch(function(err) {
 //             return next(err);
         });
-});
+// });
 
 app.listen(process.env.PORT || port, function() {
     console.log('Node start on port : ' + port);
