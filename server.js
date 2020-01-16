@@ -18,18 +18,19 @@ app.get('/', function(req, res) {
 });
 
 app.post('/test', function(req, res) {
-    var options = {
-        method: 'POST',
-        uri: ' https://80beac66.ngrok.io/test',
-        json: true
-    };
+    res.send("complete")
+//     var options = {
+//         method: 'POST',
+//         uri: ' https://80beac66.ngrok.io/test',
+//         json: true
+//     };
 
-    rp(options)
-        .then(function(parsedBody) {
-            res.send(parsedBody)
-        })
-        .catch(function(err) {
-            return next(err);
+//     rp(options)
+//         .then(function(parsedBody) {
+//             res.send(parsedBody)
+//         })
+//         .catch(function(err) {
+//             return next(err);
         });
 });
 
